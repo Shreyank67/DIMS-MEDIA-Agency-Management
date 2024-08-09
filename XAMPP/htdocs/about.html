@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AVIBOOK ABOUT</title>
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+        rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="css/fontAwesome.css" />
+    <!-- <link rel="stylesheet" href="css/hero-slider.css" />
+    <link rel="stylesheet" href="css/owl-carousel.css" /> -->
+    <!-- <link rel="stylesheet" href="css/datepicker.css" /> -->
+    <link rel="stylesheet" href="css/tooplate-style.css" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="about.css" />
+    <script
+        type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+        nomodule
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+</head>
+<body>
+    <section class="page-heading" id="top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <nav>
+                        <div class="logo">
+                            <h1>
+                                AVIBOOK - ABOUT US
+                            </h1>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-md-6">
+                    <div class="page-direction-button">
+                        <a href="index.html"><i class="fa fa-home"></i>Go Back Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="memories">
+        <div class="section__container memories__container">
+        <div class="memories__header">
+            <h1 class="section__header">
+            Travel to make memories all around the world
+            </h1>
+            <button class="view__all">View All</button>
+        </div>
+        <div class="memories__grid">
+            <div class="memories__card">
+            <span><i class="ri-calendar-2-line"></i></span>
+            <h4>Book & relax</h4>
+            <p>
+                With "Book and Relax," you can sit back, unwind, and enjoy the
+                journey while we take care of everything else.
+            </p>
+            </div>
+            <div class="memories__card">
+            <span><i class="ri-shield-check-line"></i></span>
+            <h4>Smart Checklist</h4>
+            <p>
+                Introducing Smart Checklist with us, the innovative solution
+                revolutionizing the way you travel with our airline.
+            </p>
+            </div>
+            <div class="memories__card">
+            <span><i class="ri-bookmark-2-line"></i></span>
+            <h4>Save More</h4>
+            <p>
+                From discounted ticket prices to exclusive promotions and deals,
+                we prioritize affordability without compromising on quality.
+            </p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="section__container lounge__container">
+        <div class="lounge__image">
+        <img src="images/avi window 1.jpg" alt="lounge" />
+        <img src="images/avi loung 1.jpg" alt="lounge" />
+        </div>
+        <div class="lounge__content">
+        <h1 class="section__header">Unaccompanied Minor Lounge</h1>
+        <div class="lounge__grid">
+            <div class="lounge__details">
+            <h4>Experience Tranquility</h4>
+            <p>
+                Serenity Haven offers a tranquil escape, featuring comfortable
+                seating, calming ambiance, and attentive service.
+            </p>
+            </div>
+            <div class="lounge__details">
+            <h4>Elevate Your Experience</h4>
+            <p>
+                Designed for discerning travelers, this exclusive lounge offers
+                premium amenities, assistance, and private workspaces.
+            </p>
+            </div>
+            <div class="lounge__details">
+            <h4>A Welcoming Space</h4>
+            <p>
+                Creating a family-friendly atmosphere, The Family Zone is the
+                perfect haven for parents and children.
+            </p>
+            </div>
+            <div class="lounge__details">
+            <h4>A Culinary Delight</h4>
+            <p>
+                Immerse yourself in a world of flavors, offering international
+                cuisines, gourmet dishes, and carefully curated beverages.
+            </p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="primary-button">
+                        <a href="#" class="scroll-top">Back To Top</a>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <ul class="social-icons">
+                        <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/"><i class="fa fa-youtube-play"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-12">
+                    <p>Copyright © 2024 Web Design Mastery. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // navigation click actions 
+            $('.scroll-link').on('click', function(event){
+                event.preventDefault();
+                var sectionID = $(this).attr("data-id");
+                scrollToID('#' + sectionID, 750);
+            });
+            // scroll to top action
+            $('.scroll-top').on('click', function(event) {
+                event.preventDefault();
+                $('html, body').animate({scrollTop:0}, 'slow');         
+            });
+            // mobile nav toggle
+            $('#nav-toggle').on('click', function (event) {
+                event.preventDefault();
+                $('#main-nav').toggleClass("open");
+            });
+        });
+        // scroll function
+        function scrollToID(id, speed){
+            var offSet = 0;
+            var targetOffset = $(id).offset().top - offSet;
+            var mainNav = $('#main-nav');
+            $('html,body').animate({scrollTop:targetOffset}, speed);
+            if (mainNav.hasClass("open")) {
+                mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+                mainNav.removeClass("open");
+            }
+        }
+        if (typeof console === "undefined") {
+            console = {
+                log: function() { }
+            };
+        }
+    </script>
+
+</body>
+</html>
